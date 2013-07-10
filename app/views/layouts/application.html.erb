@@ -2,19 +2,17 @@
 <html>
 	<head>
 	  <!-- main_message located in spec/support/utilities.rb-->
-	  <title><%= main_message %></title>
+	  <title><%= "HAPPY 50th BIRTHDAY!" %></title>
 	  <%= stylesheet_link_tag    "application", media: "all",
 	                                            "data-turbolinks-track" => true %>
 	  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 	  <%= csrf_meta_tags %>
-	  <!--[if lt IE 9]>
-	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	  <![endif]-->
+	  <%= render 'layouts/shim' %>
 	</head>
 	<body>
 		<div class="container">
 			<%= yield %>
 		</div>
-
+		<%= render 'layouts/footer' %>
 	</body>
 </html>
