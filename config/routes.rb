@@ -1,10 +1,11 @@
 MaterApp::Application.routes.draw do
-  get "static_pages/landing"
-  get "static_pages/home"
-  get "static_pages/mother"
-  get "static_pages/son"
-  get "static_pages/relationship"
-  get "static_pages/photos"
+
+  root to: "static_pages#landing"
+  match '/home',    to: 'static_pages#home',    via: 'get'
+  match '/mother',    to: 'static_pages#mother',    via: 'get'
+  match '/son',    to: 'static_pages#son',    via: 'get'
+  match '/relationship',    to: 'static_pages#relationship',    via: 'get'
+  match '/photos',    to: 'static_pages#photos',    via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
