@@ -2,9 +2,22 @@
 <html>
 	<head>
 		<title>HAPPY 50th BIRTHDAY!</title>
+		<%= stylesheet_link_tag    "application", media: "all",
+	                                            "data-turbolinks-track" => true %>
+	  	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	  	<%= csrf_meta_tags %>
+	  	<%= render 'layouts/shim' %>
 	</head>
-	<body>
-		<h1>MOM</h1>
-		<p>This will yield text that will eventually say happy 50th</p>
+	<body id="Landing_Page">
+		<div class ="row" id="Landing_Header">
+			<a style="text-decoration:none" href="/home">
+				MOM
+			</a>
+		</div>
+		<div class="row" id="Landing_Message">
+			<a style="text-decoration:none" href="/home">
+				HAPPY <b>50</b>th BIRTHDAY!
+			</a>
+		</div>
 	</body>
 </html>

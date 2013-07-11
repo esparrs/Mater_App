@@ -59,13 +59,13 @@ describe "Static pages" do
 		it_should_behave_like "all static pages"
   	end
 
-  	describe "Photos page" do
+  # 	describe "Photos page" do
 
-  		before { visit photos_path }
+  # 		before { visit photos_path }
 
-  		let(:heading) { "Photos" }
-		let(:title) { "HAPPY 50th BIRTHDAY!" }
+  # 		let(:heading) { "Photos" }
+		# let(:title) { "HAPPY 50th BIRTHDAY!" }
 
-		it_should_behave_like "all static pages"
-  	end
+		# it_should_behave_like "all static pages"
+  # 	end
 end
